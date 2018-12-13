@@ -74,7 +74,7 @@ export class AppComponent {
     const params = new HttpParams();
     params.set('url', url);
     params.set('date', date.toString());
-    return this.http.get('http://localhost:8080/xpath/getoldxpath/', {params}).toPromise();
+    return this.http.get('http://localhost:8080/xpath/getoldxpath/', {params: params}).toPromise();
   }
 
   checkinput(input: string) {
@@ -84,9 +84,11 @@ export class AppComponent {
   }
 
   getxpath(url: string) {
-    const cpHeadears = new HttpHeaders({'Content-Type': 'application/json'});
-    // const options = new RequestOptions({headers: cpHeadears});
-    return this.http.post('http://localhost:8080/xpath/getxpath4', url, null).toPromise();
+
+    const headers = new HttpHeaders({
+        'Content-Type':  'application/json'
+    });
+    return this.http.post('http://localhost:8080/xpath/getxpath4', url, {headers: headers, responseType: 'text'}).toPromise();
   }
 
   save() {
@@ -221,12 +223,13 @@ export class AppComponent {
   }
 
   getxpath2(url: string, content: string) {
-    const cpHeadears = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'});
-    // const options = new RequestOptions({headers: cpHeadears});
+    const headers = new HttpHeaders({
+      'Content-Type':  'application/json'
+    });
     const urlSearchParams = new URLSearchParams();
     urlSearchParams.append('url', url);
     urlSearchParams.append('content', content);
     const body = urlSearchParams.toString();
-    return this.http.post('http://localhost:8080/xpath/getxpath5', body, null).toPromise();
+    return this.http.post('http://localhost:8080/xpath/getxpath5', body, {headers: headers, responseType: 'text'}).toPromise();
   }
 }
