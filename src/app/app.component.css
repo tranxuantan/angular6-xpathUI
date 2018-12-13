@@ -1,0 +1,142 @@
+body{
+  background: #f0f0f0;
+}
+.bd-navbar{
+  border-radius: 0px;
+  min-height: 4rem;
+  background-color: #563d7c;
+  color:#FFFFFF;
+  margin-bottom: 10px;
+}
+.logo{
+  padding-left: 10px;
+  padding-top: 7px;
+  float:left;
+}
+.header{
+  text-align: center;
+}
+.top{
+  margin-right: 10px;
+  margin-left: 10px;
+  border: solid #ddd 0.5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.labelstyle{
+  align-content: center;
+  vertical-align: text-center;
+}
+.lbUrl{
+  margin-right: 97px;
+}
+.ipUrl{
+  margin-right: 50px;
+}
+.divError{
+  margin-left: 350px !important;
+  clear: right;
+  display: none;
+  color: red;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.labelstyle{
+  padding-top: 10px;
+}
+#divloadxpath{
+  clear: left;
+}
+.bottom{
+  width: 100%;
+  height: 500px;
+
+}
+#show{
+  border: none;
+  width: 99%;
+  margin-left:5px;
+  height: 440px;
+}
+.savexpath{
+  display: none;
+}
+.btnsave{
+  margin-bottom: 10px;
+  width: 100px;
+}
+.row{
+  margin: 10px;
+}
+#input2{
+  font-size: 12px !important;
+  width: 250px !important;
+  float: left;
+  height: 28px;
+  border-top-left-radius:4px;
+  border-top-right-radius:0px;
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:0px;
+}
+#calendar{
+  width:40px;
+  height:20px;
+}
+.footer{
+  padding-top: 10px;
+  text-align: center;
+}
+.error {
+  background: #ffecec url('../assets/images/error.png') no-repeat 10px 50%;
+}
+.success {
+  background: #e9ffd9 url('../assets/images/success.png') no-repeat 10px 50%;
+  border: 1px solid #a6ca8a;
+}
+.btn-primary {
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+button:focus {
+  border-color: #563d7c !important;
+  outline-color: #563d7c !important;
+}
+.btn-primary:hover{
+  background-color: #563d7c;
+}
+.theme-dark-blue .bs-datepicker-head {
+  background-color: #563d7c !important;
+}
+.alert{
+  height: 34px;
+  text-align: center;
+  padding-top: 5px;
+  float:left;
+  margin-left: 50%;
+}
+.modal-content {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-background-clip: none;
+  background-clip: none;
+  border: none;
+  border: none;
+  border-radius: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 250px;
+  text-align: center;
+}
+.loading{
+  width:50px;
+  height: 50px;
+}
